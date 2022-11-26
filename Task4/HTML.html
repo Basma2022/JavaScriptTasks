@@ -1,0 +1,62 @@
+<html>
+<head>
+    <style>
+        #rightDiv {
+          position: absolute; 
+          top: 40%;
+          left:0px;
+          float: left;
+        }
+        #leftDiv {
+          position: absolute; 
+          top: 40%;
+          right:0px;
+          float: right;
+        }
+        #bottomDiv
+        {
+        position: absolute; 
+        right: 25%;
+         left: 50%;
+        bottom: 0px;
+
+        margin-left:-150px;
+          
+        }
+        #container
+        {
+          position: fixed; 
+          width: 500px;
+         height: 490px;
+         top: 10%;
+         left: 30%;
+         background-color: blue;
+         line-height: 300px;
+         text-align: center;
+        }
+        #div2
+        {
+          position: fixed; 
+          width: 100px;
+         height: 100px;
+         top: 60%;
+         left: 30%;
+         line-height: 300px;
+         text-align: center;
+        }
+   
+    </style>
+</head>
+<body> 
+    <div id = "container">
+    <div id = "rightDiv"><img src = "icon1.gif" id = "rightImg"> </div>
+    <div id = "bottomDiv"> <img src = "TOP.JPG"  id = "leftImg"> </div>
+    <div id = "leftDiv"> <img src = "icon2.gif"  id = "bottomImg"> </div>
+    </div>
+    <div id="div2">
+    <input type = "button", value = "Go" , id="btnn", onclick="GoOrStop(this)">
+    <input type = "button" , value = "Reset" , onclick="ResetPos()">
+    </div>
+    <script src="JavaScript.js" ></script>
+</body>
+</html>
